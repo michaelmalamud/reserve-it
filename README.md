@@ -1,6 +1,6 @@
 # Periodic Tables
 
-[Test Out the App](https://www.markdownguide.org)
+[Test Out the App](https://reserve-it-client.herokuapp.com/)
 
 ---
 **Technologies used:** *PostgreSQL, Express, Knex, React, Bootstrap, CSS*
