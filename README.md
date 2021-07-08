@@ -57,3 +57,12 @@ Clicking the Seat button will bring the user to the "Seat Reservation" page.
 When a reservation is seated, a "Finish" button appears next to its table. Clicking it will remove the "Finish" button, re-activate the table's availability, and "close" the reservation. 
 
 **When the user clicks "Finish", the API changes the table's status from "occupied" back to "free," and removes the reservation from the database.**
+
+## Installation
+1. Fork and clone this repository.
+1. Run `cp ./back-end/.env.sample ./back-end/.env`.
+1. Update the `./back-end/.env` file with the connection URL's to your ElephantSQL database instance.
+1. Run `cp ./front-end/.env.sample ./front-end/.env`.
+1. You should not need to make changes to the `./front-end/.env` file unless you want to connect to a backend at a location other than `http://localhost:5000`.
+1. Run `npm install` to install project dependencies.
+1. Run `npm run start:dev` to start your server in development mode.
