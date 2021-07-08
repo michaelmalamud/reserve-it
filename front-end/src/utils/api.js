@@ -110,7 +110,6 @@ export async function createTable(table, signal) {
 
 export async function seatReservation(reservation_id, table_id, signal) {
   const url = `${API_BASE_URL}/tables/${table_id}/seat`;
-  console.log(url)
   const options = {
     method: "PUT",
     body: JSON.stringify({ data: { reservation_id } }),

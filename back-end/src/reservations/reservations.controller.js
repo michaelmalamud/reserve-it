@@ -106,7 +106,6 @@ function isFutureDate(req, res, next) {
 
 function timeFormatValidation(req, res, next) {
     const { reservation_time } = req.body.data; 
-    console.log(reservation_time.slice(0, 5))
     if (reservation_time.slice(0, 5).match(/^\d{1,2}:\d{2}([ap]m)?$/) === null) {
       return next({
         status: 400,
@@ -220,7 +219,6 @@ async function update(req, res) {
   }) 
 } else {
   const updatedReservation = {...req.body.data, reservation_date: req.body.data.reservation_date.slice(0, 10), reservation_time:  req.body.data.reservation_time.slice(0, 5)};
-  console.log(updatedReservation)
   res.status(200).json({
     data: await reservationsService.update(updatedReservation)
   })
@@ -235,16 +233,13 @@ async function update(req, res) {
 // List handler for reservation resources
 async function list(req, res) {
   if (req.query.date) {
-    // console.log(req.query.date)
     const { date } = req.query;
     const reservationsByDate = await reservationsService.list(date);
     res.json({
       data: reservationsByDate,
     });
   } if (res.locals.mobile_number) {
-    // console.log(res.locals.mobile_number)
     const found = await reservationsService.search(res.locals.mobile_number);
-    console.log(found);
   res.json({ data: found })
    }
 }
