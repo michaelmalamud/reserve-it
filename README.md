@@ -26,3 +26,6 @@ Upon startup, the application loads the Dashboard page, which is set to display 
 
 ## Create/Update Forms
 
+![table-form-image](./front-end/readme-screenshots/Table-Form.png)
+
+![reservation-form-image](./front-end/readme-screenshots/Reservation-Form.png)
