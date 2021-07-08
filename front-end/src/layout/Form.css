@@ -18,17 +18,16 @@ label {
 }
 
 .form-buttons {
+    display: flex;
+    justify-content: space-evenly; 
     margin-top: 2%;
-    padding-bottom: 2%;
-    /* margin-bottom: 4%; */
-    margin-left: 40%;
 }
 
 .btn-primary {
     background-color: #079094;
     border: none;
     /* margin-top: 2%; */
-    margin-left: 2%; 
+    /* margin-left: 2%;  */
 }
 
 .btn-secondary {

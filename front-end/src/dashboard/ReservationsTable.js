@@ -38,6 +38,7 @@ const ReservationsTable = ({reservations}) => {
 
         return (
           <div className="table-container">
+            <div className="table-container">
             <table className="table">
       <thead>
         <tr>
@@ -68,6 +69,7 @@ const ReservationsTable = ({reservations}) => {
         ))}
       </tbody>
     </table>
+    </div>
           </div> 
         )
       }

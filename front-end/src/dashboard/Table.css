@@ -1,5 +1,8 @@
+.table-container {
+    overflow-x: auto;
+}
+
 table, table.table {
-    /* margin-top: 1%; */
     margin-bottom: 2%;
     background-color: #D3FFFF;
     color: #003438;
@@ -7,24 +10,23 @@ table, table.table {
 }
 
 
-
 thead, tbody, td, th {
-     border: 1px solid #079094 !important;
+    border: 1px solid #079094 !important;
 }
 
 
 th, td {
-    text-align: center;
+   text-align: center;
 }
 
 .btn-seat {
-    color: #ffffff;
-    background-color: #079094;
-    border: none;
+   color: #ffffff;
+   background-color: #079094;
+   border: none;
 }
 
 .btn-edit {
-    background-color: #F2A94A;
-    border: none;
+   background-color: #F2A94A;
+   border: none;
 }
 
