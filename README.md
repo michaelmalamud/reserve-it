@@ -12,4 +12,13 @@ This application exists for the restaurant industry. The typical user would be t
 - "Seat" a reservation at a free table, thus making that table "occupied"
 - "Finish" a reservation's tabling when they have completed their meal. This moves the table back from "occupied" to "free" and removes the reservation from the database.
 
+## Dashboard 
+
 ![image](./front-end/readme-screenshots/Dashboard.png)
+
+### The data that populates both tables is retreived from a PostgreSQL database using an Express and Knex-based API.
+
+Upon startup, the application loads the Dashboard page, which is set to display both the "reservations" table and "tables" table. The Dashboard defaults to today's date, so it will only load reservations that are set for today. 
+
+## Create/Update Forms
+
