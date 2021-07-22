@@ -1,4 +1,4 @@
-# Periodic Tables
+# Reserve-It
 
 [Test Out the App](https://reserve-it-client.herokuapp.com/)
 
