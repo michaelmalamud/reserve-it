@@ -49,4 +49,7 @@
   "keywords": [],
   "author": "Thinkful, Inc.",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "14.15.5"
+  }
 }
